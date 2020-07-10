@@ -1,0 +1,42 @@
+Places Base URL: https://maps.googleapis.com/maps/api/place/findplacefromtext/output?parameters
+
+Google API key: AIzaSyD9zrHku8yPl0RU8P1IVNyfAq5YYfqj4Eg
+
+EXAMPLE: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?
+
+input=Museum%20of%20Contemporary%20Art%20Australia&
+inputtype=textquery&
+fields=photos,formatted_address,name,rating,opening_hours,geometry&
+key=YOUR_API_KEY
+
+__________________________
+NEW URL
+
+Returned URL: https://maps.googleapis.com/maps/api/place/findplacefromtext/output?
+
+api-key=AIzaSyD9zrHku8yPl0RU8P1IVNyfAq5YYfqj4Eg&
+
+types=restaurant%2Ccafe%2Cbar%2Cbakery%2Cmeal_delivery%2Cmeal_takeaway&
+
+fields=name%2Cformatted_address&
+
+input=27408&
+
+locationbias=circle%3A8046.72%4036.102886%2C+-79.813845
+
+__________________________
+NEW NEARBY URL
+
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=36.1046869,-79.8128649&radius=8046.72&type=restaurant,cafe,bar,bakery,meal_delivery,meal_takeaway&field=name,formatted_address&key=AIzaSyD9zrHku8yPl0RU8P1IVNyfAq5YYfqj4Eg
+
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?
+location=-43.708178&
+radius=8046.72&types=restaurant,cafe,bar,bakery,meal_delivery,meal_takeaway&fields=name,formatted_address&key=AIzaSyD9zrHku8yPl0RU8P1IVNyfAq5YYfqj4Eg
+
+FRANENSTEIN URL: 
+returns json obj for both ajax requests:
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=36.1046869%2C-79.8128649&radius=8046.72&types=restaurant%2Ccafe%2Cbar%2Cbakery%2Cmeal_delivery%2Cmeal_takeaway&fields=name%2Cformatted_address&key=AIzaSyD9zrHku8yPl0RU8P1IVNyfAq5YYfqj4Eg
+
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=36.1046869%2C-79.8128649&radius=8046.72&type=restaurant&key=AIzaSyD9zrHku8yPl0RU8P1IVNyfAq5YYfqj4Eg
+
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=1500&type=restaurant&keyword=cruise&key=YOUR_API_KEY
