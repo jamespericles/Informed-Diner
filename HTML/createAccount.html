@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="../CSS/createAccount.css" />
+  </head>
+  <body>
+    <section class="hero is-danger is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Create Your Account
+          </h1>
+          <h2 class="subtitle">
+            Please provide the following information or sign in with Google.
+          </h2>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <img src="../assets/ID-logo-white.png" alt="Informed Diner logo" />
+        </div>
+        <div class="column">
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input
+                class="input"
+                id="emailInput"
+                type="email"
+                placeholder="Email"
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left">
+              <input
+                class="input"
+                id="passwordInput"
+                type="password"
+                placeholder="Password"
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control">
+              <form
+                class="button is-success"
+                id="submit"
+                
+                type="submit"
+              >
+              
+                Submit
+              </form>
+              <button class="button is-success" id="google">
+                Continue with Google
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+      </div>    
+    </section>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../Javascript/createAccount.js"></script>
+</html>

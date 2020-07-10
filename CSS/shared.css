@@ -1,0 +1,100 @@
+/* CUSTOM STYLES FOR THE SORT/FILTER YOUR RESULTS SLIDE-IN */
+/* ------------------------------------------------------- */
+/* Sets the Sort By radio button color in the sort/filter slide-in */
+[type="radio"]:checked+span:after {
+    background-color: #F44336;
+    border: 2px solid #F44336;
+}
+/* Sets the "Filter By Service" toggle border color in the sort/filter slide-in" */
+[type="radio"]:not(:checked)+span:before {
+    border: 2px solid #444;
+}
+/* Sets background field area for "Filter By Service" toggle switch in the sort/filter slide-in" */
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #ff9a93;
+}
+/* Sets the "Filter By Service" toggle switch color in the sort/filter slide-in" */
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #f44336;
+}
+/* Sets the "Filter By Price Range" slider color in the sort/filter slide-in" */
+input[type=range]::-webkit-slider-thumb {
+    background-color: #F44336;
+}
+/* Sets a high z-index on the filter btn so that it floats over elements as topmost clickable object/button */
+#filterBtnDiv {
+    z-index: 1000;
+}
+
+/* FAB BUTTON / MENU PLACEMENT */
+#fab-parent-container-div {
+    position: absolute; 
+    right: 41px !important;; 
+    top: 8px; 
+    height: 70px; 
+    margin-top: 30px;
+}
+#fab-toggle-parent-div {
+    position: relative; 
+    right: 41px !important;
+}
+
+/* Administrative CSS Classes */
+.clearfix { 
+    content: " ";
+    display: block;
+    clear: both;
+    /* to be placed on elements after floats */
+}
+
+/* Class to truncate lines */
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+
+/* Classes & styles for listings title links */
+#titleLink-1, #restNameSpan-1, #titleLink-2, #restNameSpan-2, #titleLink-3, #restNameSpan-3, #titleLink-4, #restNameSpan-4, #titleLink-5, #restNameSpan-5, #titleLink-6, #restNameSpan-6, #titleLink-7, #restNameSpan-7, #titleLink-8, #restNameSpan-8, #titleLink-9, #restNameSpan-9, #titleLink-10, #restNameSpan-10, #titleLink-11, #restNameSpan-11, #titleLink-12, #restNameSpan-12, #titleLink-13, #restNameSpan-13, #titleLink-14, #restNameSpan-14, #titleLink-15, #restNameSpan-15, #titleLink-16, #restNameSpan-16, #titleLink-17, #restNameSpan-17, #titleLink-18, #restNameSpan-18, #titleLink-19, #restNameSpan-19, #titleLink-20, #restNameSpan-20 {
+    color: #F44336;
+}
+#titleLink-1:hover, #restNameSpan-1:hover, #titleLink-2:hover, #restNameSpan-2:hover, #titleLink-3:hover, #restNameSpan-3:hover, #titleLink-4:hover, #restNameSpan-4:hover, #titleLink-5:hover, #restNameSpan-5:hover, #titleLink-6:hover, #restNameSpan-6:hover, #titleLink-7:hover, #restNameSpan-7:hover, #titleLink-8:hover, #restNameSpan-8:hover, #titleLink-9:hover, #restNameSpan-9:hover, #titleLink-10:hover, #restNameSpan-10:hover, #titleLink-11:hover, #restNameSpan-11:hover, #titleLink-12:hover, #restNameSpan-12:hover, #titleLink-13:hover, #restNameSpan-13:hover, #titleLink-14:hover, #restNameSpan-14:hover, #titleLink-15:hover, #restNameSpan-15:hover, #titleLink-16:hover, #restNameSpan-16:hover, #titleLink-17:hover, #restNameSpan-17:hover, #titleLink-18:hover, #restNameSpan-18:hover, #titleLink-19:hover, #restNameSpan-19:hover, #titleLink-20:hover, #restNameSpan-20:hover {
+    color: #FF9801;
+}
+
+@media screen and (max-width: 450px) {
+    /* RED FAB MENU BUTTON AND ORANGE SUB-MENU BUTTONS  */
+    /* ------------------------------------------------------- */
+    /* ON MOBLE: adjusts the spacing and position of the FAB and the menu buttons */
+    #fab-toggle-parent-div {
+        position: fixed;
+        top: 0;
+        /* right: 41px !important; */
+    }
+    #fab-toggle-menu {
+        position: fixed;
+        float: right;
+        top: 15px;
+        right: 45px;
+    }
+    #fab-toggle-parent-div > ul > li {
+        margin-right: 5px;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+
+    #fab-toggle-parent-div > ul {
+        margin-right: -10px;
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: -10px
+    }
