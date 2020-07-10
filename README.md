@@ -27,6 +27,22 @@ The scoring algorithm leverages forecasted data on the selected restaurant.  The
 
 ![Image of Details View](https://user-images.githubusercontent.com/31550856/87201144-03bc2400-c2cc-11ea-860b-39e807d67b05.png)
 
+
+
 ## Reviewing the Deployed Application
 
 You can review the deployed application at [https://srmchartroom.github.io/Informed-Diner/index.html](https://srmchartroom.github.io/Informed-Diner/index.html).
+
+## Known Bugs & Planned Future Enhancements
+-- 1. Currently the profile and account creation simply direct into the listings.  Future enhancement is to create profile creation, tokens, and store those values.
+-- 2. The entry and APIs will be refreshed soon which have a cap and will be discontinued.  We plan to provide an entry state for development review to use that will take user input of public and private API keys so that can test the application based on their own APIs.
+-- 3. The left slide drawer menu current provides sort and filter controls that are not hooked up to the results, which was deprioritized for the 1.0 MVP release.  Future enhancement is planned to attach these controls.
+-- 4. There is currently a loop mismatch bug in the listings that is displaying the incorrect image for the API returned results after storing in the session object, pushing to Firebase and referencing from Firebase.  We'll get that fixed in the next release.
+-- 5. the Safety score in the listings is current placeholder only.  This will be updated to display an actual safety score is one exists in a future enhancement release.
+-- 6. We hoped to hook into the directions maps api to provide turn by turn directions from the users current geolocation or address based on the stored values in their profile.  Once the profile is component is finally hooked up, we'll look into provided that feature.
+-- 7. The top FAB button that provides the utility functions has some future enhancements planned.  The search button will be hooked into a user entry field that allows the user to search on restaurant name.  The geo button will allow the user to enter/search on a different location (and likely recall previously searched locations).  Favorites button is planned to return results of favorited restaurants.  And the profile button is planned to navigate the user to a profile update page/module.
+-- 8. The busiest time and safest times displayed on the restaurant details page carry a couple bugs that are due to be fixed in the next enhancement.  Currently times with half-hours (e.g. 4:30 PM) are showing as .5 (e.g. 4.5PM).  Also, if the API doesn't return safest time values reliably for the given page, the page may display [object Undefined], which will be fixed in the next update.
+-- 9. The map is currently a placeholder on the restaurant details page and is planned to be updated to be accurant to the address in the next enhancement release.
+-- 10.  A handful of helpful graph and mapping functions are planned leveraging echarts.js.  That exciting enhancement is also planned for the next release.
+
+Be sure to star and watch the repo for updates!
