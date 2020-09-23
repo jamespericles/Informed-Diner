@@ -2,7 +2,7 @@
 
 The concept of this app is two-fold.  It addresses a demographic-independent human need to eat, with a societal norm to enjoy eating prepared food at a restaurant.  It also addresses concern of the current time (July 2020) as the United States current leads the world in the highest volume of deaths per capita as a result of the Covid-19 virus.  Coming on the heels of some lifting of quarantine restrictions in North Carolina, and still seeing surges in infected case counts, and statewise mandate to observe social distancing and wearing of masks, the application was incepted based on providing users with a means to find open restaurants nearby (as many restaurants at this time observe limited hours or are closed altogether) and provides them with a way to determine how safe a restaurant is based on crowdedness and traffic to it so that they can more planfully decide when to patronize the restaurant.
 
-Our team consisted of myself,[James Pericles](https://github.com/jamespericles),[Colin Shelton](https://github.com/colinshelton) and [Sean McGinnis](https://github.com/srmchartroom), with research assistance and presentation support from [Chris Schram](https://github.com/Schramm9). 
+Our team consisted of myself, [James Pericles](https://github.com/jamespericles), [Colin Shelton](https://github.com/colinshelton) and [Sean McGinnis](https://github.com/srmchartroom), with research assistance and presentation support from [Chris Schram](https://github.com/Schramm9). 
 
 ## Data & Logic Flow
 
